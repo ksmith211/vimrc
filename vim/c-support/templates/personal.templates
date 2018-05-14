@@ -1,0 +1,4 @@
+  SetMacro( 'AUTHOR',      'Kevin LoBiondo' )
+  SetMacro( 'AUTHORREF',   'KL' )
+  SetMacro( 'EMAIL',       'kevin.lobiondo@gmail.com' )
+  SetMacro( 'COPYRIGHT',   'Copyright (c) |2017|, |Kevin LoBiondo|' )
