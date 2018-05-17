@@ -15,7 +15,7 @@ set errorformat=%-P%f,
 set nu
 set hlsearch
 set pastetoggle=<F3>
-set tabstop=2 
+set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 highlight Pmenu ctermfg=07 ctermbg=0 guifg=#ffffff guibg=#000000
 
@@ -23,7 +23,7 @@ silent! nmap <C-t> :NERDTreeToggle<CR>
 silent! nmap <C-m> :SyntasticToggleMode<CR>
 silent! nmap <C-c> :SyntasticCheck<CR> 
 "Paste in a way that won't freeze vim (requires pbpaste installed on system)
-silent! nmap <C-p> :r! pbpaste<CR> 
+silent! nmap <C-v> :r! pbpaste<CR> 
 
 autocmd BufReadPre,FileReadPre,Filetype gitcommit setlocal spell textwidth=72
 autocmd BufReadPre,FileReadPre,FileType python set colorcolumn=120
@@ -32,6 +32,7 @@ autocmd BufReadPre,FileReadPre,FileType python  nmap <C-o> :set colorcolumn=0<CR
 autocmd BufReadPre,FileReadPre,Filetype python set expandtab ts=4 sts=4 sw=4 ai
 autocmd BufReadPre,FileReadPre,Filetype javascript set expandtab ts=2 sts=2 sw=2 ai
 autocmd BufReadPre,FileReadPre,FileType javascript nmap <C-l> :! eslint --fix %:p<CR> 
+autocmd BufReadPre,FileReadPre,Filetype bash set expandtab ts=2 sts=2 sw=2 ai
 
 call pathogen#infect()
 call pathogen#helptags()
