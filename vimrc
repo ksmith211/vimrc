@@ -23,7 +23,7 @@ silent! nmap <C-t> :NERDTreeToggle<CR>
 silent! nmap <C-m> :SyntasticToggleMode<CR>
 silent! nmap <C-c> :SyntasticCheck<CR> 
 "Paste in a way that won't freeze vim (requires pbpaste installed on system)
-silent! nmap <C-v> :r! pbpaste<CR> 
+silent! nmap <C-p> :r! pbpaste<CR> 
 
 autocmd BufReadPre,FileReadPre,Filetype gitcommit setlocal spell textwidth=72
 autocmd BufReadPre,FileReadPre,FileType python set colorcolumn=120
