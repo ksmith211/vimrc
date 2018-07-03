@@ -65,6 +65,7 @@ Plug 'marijnh/tern_for_vim'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'mxw/vim-jsx'
 Plug 'davidhalter/jedi-vim'
+Plug 'fisadev/vim-isort'
 Plug 'kchmck/vim-coffee-script'
 Plug 'motus/pig.vim', {'for': 'pig'}
 Plug 'derekwyatt/vim-sbt'
@@ -105,7 +106,7 @@ let g:pymode_lint=1
 let g:pymode_lint_on_fly =1
 let g:pymode_lint_message = 1
 let g:pymode_options_max_line_length = 120
-
+let g:vim_isort_map = '<C-i>'
 "python autocomplete and other ide-like settings
 let g:tern_show_argument_hints='on_hold'
 let g:tern_map_keys=1
