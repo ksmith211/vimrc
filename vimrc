@@ -19,7 +19,7 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 highlight Pmenu ctermfg=07 ctermbg=0 guifg=#ffffff guibg=#000000
 
-silent! nmap <C-t> :NERDTreeToggle<CR>
+silent! nmap <C-t> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 silent! nmap <C-m> :SyntasticToggleMode<CR>
 silent! nmap <C-c> :SyntasticCheck<CR> 
 "Paste in a way that won't freeze vim (requires pbpaste installed on system)
