@@ -1,3 +1,10 @@
+" Install plugged for managing dependencies:
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"
+" TODO: Incorporate UltiSnips for snippet/autocomplete expansions:
+" https://github.com/sirver/UltiSnips
+
 syntax on
 filetype indent on
 filetype plugin on
