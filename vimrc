@@ -11,7 +11,7 @@ filetype plugin on
 filetype on
 
 set colorcolumn=0
-set mouse=a
+"set mouse=a
 set nofoldenable 
 set wildignore+=*/build/**
 set term=builtin_ansi
@@ -86,6 +86,7 @@ Plug 'mustache/vim-mustache-handlebars', {'for': 'mustache'}
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 Plug '~/my-prototype-plugin'
+Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
