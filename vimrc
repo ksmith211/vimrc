@@ -109,6 +109,7 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_loc_list_height = 3
 
 "python linter settings
+let g:pymode_rope = 0
 let g:pymode=1
 let g:pymode_options=1
 let g:pymode_lint=1 
@@ -125,6 +126,8 @@ let g:jedi#show_call_signatures = 1
 let g:jedi#goto_command = "<leader>d"
 let g:jedi#popup_select_first = 1
 let g:jedi#use_tabs_not_buffers = 1
+let g:jedi#auto_close_doc = 0
+
 
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
