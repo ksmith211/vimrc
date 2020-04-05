@@ -45,6 +45,8 @@ call pathogen#infect()
 call pathogen#helptags()
 
 call plug#begin('~/.vim/plugged')
+"Pymode
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 "Autoread if files change on filesystem
 Plug 'djoshea/vim-autoread'
 "YouCompleteMe is off for now 
@@ -56,7 +58,6 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 "Ultisnips 
 "Plug 'https://github.com/SirVer/ultisnips.git'
 Plug 'honza/vim-snippets'
-Plug 'https://github.com/ervandew/eclim.git' 
 Plug 'https://github.com/ervandew/supertab.git'
 Plug 'https://github.com/Raimondi/delimitMate.git'
 Plug 'https://github.com/scrooloose/nerdtree'
@@ -67,7 +68,7 @@ Plug 'scrooloose/nerdcommenter'
 "JAVASCRIPT & PYTHON PLUGINS
 Plug 'pangloss/vim-javascript'
 Plug 'leshill/vim-json'
-Plug 'scrooloose/syntastic'
+"Plug 'scrooloose/syntastic'
 Plug 'marijnh/tern_for_vim'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'mxw/vim-jsx'
