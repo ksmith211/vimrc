@@ -22,7 +22,7 @@ set errorformat=%-P%f,
 set nu
 set hlsearch
 set pastetoggle=<F3>
-set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
+"set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 highlight Pmenu ctermfg=07 ctermbg=0 guifg=#ffffff guibg=#000000
 
@@ -41,12 +41,13 @@ autocmd BufReadPre,FileReadPre,Filetype javascript set expandtab ts=2 sts=2 sw=2
 autocmd BufReadPre,FileReadPre,FileType javascript nmap <C-l> :! eslint --fix %:p<CR> 
 autocmd BufReadPre,FileReadPre,Filetype bash set expandtab ts=2 sts=2 sw=2 ai
 
+"visually select code block and type gq to autopep8
+au FileType python setlocal formatprg=autopep8\ -
+
 call pathogen#infect()
 call pathogen#helptags()
 
 call plug#begin('~/.vim/plugged')
-"Pymode
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 "Autoread if files change on filesystem
 Plug 'djoshea/vim-autoread'
 "YouCompleteMe is off for now 
@@ -69,6 +70,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'pangloss/vim-javascript'
 Plug 'leshill/vim-json'
 "Plug 'scrooloose/syntastic'
+"
 Plug 'marijnh/tern_for_vim'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'mxw/vim-jsx'
@@ -109,7 +111,6 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_loc_list_height = 3
 
 "python linter settings
-let g:pymode_rope = 0
 let g:pymode=1
 let g:pymode_options=1
 let g:pymode_lint=1 
@@ -128,7 +129,6 @@ let g:jedi#popup_select_first = 1
 let g:jedi#use_tabs_not_buffers = 1
 let g:jedi#auto_close_doc = 0
 
-
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
 
@@ -142,3 +142,5 @@ let g:ctrlp_use_caching=0
 
 "custom colorscheme in autocomplete menus
 highlight Pmenu ctermbg=DarkMagenta guibg=DarkMagenta ctermfg=Black guifg=Black
+syntax on
+hi Search ctermbg=LightYellow
