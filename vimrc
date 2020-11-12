@@ -160,7 +160,10 @@ let g:vim_isort_map = '<C-i>'
 "python autocomplete and other ide-like settings
 let g:tern_show_argument_hints='on_hold'
 let g:tern_map_keys=1
-let g:SuperTabClosePreviewOnPopupClose = 0
+"Supertab settings
+let g:SuperTabClosePreviewOnPopupClose = 1
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
 let g:jedi#popup_on_dot = 1
 let g:jedi#show_call_signatures = 1
 let g:jedi#goto_command = "<leader>d"
@@ -183,3 +186,5 @@ let g:ctrlp_use_caching=0
 highlight Pmenu ctermbg=DarkMagenta guibg=DarkMagenta ctermfg=Black guifg=Black
 syntax on
 hi Search ctermbg=LightYellow
+
+set completeopt=menu,preview,longest
