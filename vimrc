@@ -169,7 +169,7 @@ let g:jedi#show_call_signatures = 1
 let g:jedi#goto_command = "<leader>d"
 let g:jedi#popup_select_first = 1
 let g:jedi#use_tabs_not_buffers = 1
-let g:jedi#auto_close_doc = 0
+let g:jedi#auto_close_doc = 1
 
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
